@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "http://localhost/v1/api/$1",
+      "dest": "http://localhost:8000/v1/api/$1",
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
@@ -22,7 +22,7 @@
     }
   ],
   "env": {
-    "NEXT_PUBLIC_API_URL": "http://localhost/v1",
+    "NEXT_PUBLIC_API_URL": "http://localhost:8000/v1",
     "NEXT_PUBLIC_APP_KEY": "app-m8Kwmhey68dpjB5IUDgvqMeN",
     "NEXT_PUBLIC_APP_ID": "53c6f2b2-3808-42ea-950d-36e1d351e688"
   }
